@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # --- Setup ---
 st.set_page_config(layout="wide")
-genai.configure(api_key="AIzaSyD2rZYzc_sZ0bqdbJ4vNmMmi_PgQm66w0s")
+genai.configure(api_key=st.secrets["API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # --- Session State Initialization ---
